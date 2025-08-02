@@ -1,0 +1,24 @@
+.button {
+  width: 144px;
+  height: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: 272px;
+    height: 272px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .button {
+    margin-block: 35px;
+  }
+}

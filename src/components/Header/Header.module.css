@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburgerMenu {
+  width: 24px;
+  height: 21px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.line {
+  height: 1px;
+  opacity: 0.25;
+  background-color: #ffffff;
+  width: 560px;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    gap: 64px;
+    justify-content: flex-start;
+  }
+}

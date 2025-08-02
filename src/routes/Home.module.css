@@ -1,0 +1,45 @@
+.container {
+  background-image: url("../assets/home/background-home-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 119px;
+  padding-bottom: 119px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 24px 40px;
+    gap: 166px;
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+
+  .main {
+    gap: 66px;
+    padding-bottom: 128px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    gap: 455px;
+    padding: 64px 64px 0;
+    background-image: url("../assets/home/background-home-desktop.jpg");
+  }
+  .main {
+    padding-left: 100px;
+    flex-direction: row;
+    align-items: end;
+    gap: 260px;
+  }
+}

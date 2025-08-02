@@ -1,0 +1,79 @@
+.title,
+.subtitle {
+  text-transform: uppercase;
+}
+
+.title,
+.subtitle,
+.text {
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle,
+.text {
+  color: #d0d6f9;
+}
+
+.title {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 80px;
+  color: #ffffff;
+  padding-block: 24px;
+}
+
+.subtitle {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  padding-inline: 30px;
+}
+
+.text {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .textContainer {
+    width: 530px;
+    align-self: center;
+  }
+
+  .subtitle {
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+
+  .title {
+    font-size: 144px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .textContainer {
+    width: 540px;
+  }
+
+  .subtitle {
+    padding-inline: 0;
+  }
+
+  .subtitle,
+  .title,
+  .text {
+    text-align: left;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}

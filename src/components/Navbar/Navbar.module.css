@@ -1,0 +1,46 @@
+nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    gap: 38.5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(50px);
+    padding: 38.5px 40px 0 117px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Barlow Condensed";
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+
+  .link.active {
+    border-bottom: 3px solid;
+    border-color: white;
+    padding-bottom: 38.5px;
+  }
+
+  .number {
+    font-weight: 700;
+    letter-spacing: 2.7px;
+    padding-right: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  nav {
+    top: 40px;
+    padding-left: 159px;
+  }
+}
