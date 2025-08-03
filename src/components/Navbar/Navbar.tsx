@@ -7,7 +7,7 @@ function Navbar() {
   const isDesktop = useMediaQuery({ minWidth: 1440 });
 
   return (
-    <nav>
+    <nav className={styles.headerNav}>
       {isNotMobile && (
         <>
           <NavLink
@@ -17,7 +17,7 @@ function Navbar() {
             }
             to="/"
           >
-            {isDesktop && <span className={styles.number}>00</span>}
+            {isNotMobile && <span className={styles.number}>00</span>}
             home
           </NavLink>
           <NavLink

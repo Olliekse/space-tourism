@@ -1,0 +1,122 @@
+.mainContainer {
+  background-image: url("../assets/destination/background-destination-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle,
+.number {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  font-family: "Barlow Condensed";
+}
+
+.subtitle {
+  font-weight: 400;
+  padding-block: 48px 50px;
+  align-self: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.number {
+  font-weight: 700;
+  opacity: 0.25;
+  padding-right: 24px;
+}
+
+.image {
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 58px;
+}
+
+.separator {
+  height: 1px;
+  opacity: 0.25;
+  background-color: #ffffff;
+  margin-block: 24px;
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    padding-inline: 40px;
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+
+  .subtitle {
+    align-self: start;
+    padding-top: 68px;
+  }
+
+  .subtitle,
+  .number {
+    font-size: 20px;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .textContainer {
+    align-self: center;
+    max-width: 490px;
+  }
+
+  .mainContainer {
+    padding-bottom: 51px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mainContainer {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    padding: 64px 64px 181px 64px;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 151px;
+  }
+
+  .innerContainer {
+    flex-direction: row;
+    gap: 108px;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 430px;
+  }
+
+  .image {
+    width: 480px;
+    height: 480px;
+    align-self: baseline;
+  }
+
+  .subtitle {
+    padding: 72px 0 0;
+  }
+
+  .separator {
+    width: 100%;
+    margin-block: 40px;
+  }
+}

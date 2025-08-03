@@ -1,0 +1,26 @@
+.destinationNav {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  gap: 32px;
+  padding: 0;
+}
+
+.menuLink {
+  text-transform: uppercase;
+  list-style: none;
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.menuLink.active {
+  border-bottom: 3px solid;
+  border-color: #ffffff;
+  padding-bottom: 15px;
+}

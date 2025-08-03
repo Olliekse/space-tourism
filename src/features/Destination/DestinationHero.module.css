@@ -1,0 +1,49 @@
+.title {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding-block: 24px 16px;
+}
+
+.text {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8em;
+  text-align: center;
+  color: #d0d6f9;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .infoContainer {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title,
+  .text {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 96px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
