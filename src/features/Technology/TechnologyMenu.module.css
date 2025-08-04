@@ -1,0 +1,58 @@
+.destinationMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+}
+
+.menuLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  border-radius: 999px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
+.menuLink.active {
+  background-color: #ffffff;
+  opacity: 1;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .list {
+    margin: 0;
+  }
+  .menuLink {
+    font-size: 24px;
+    height: 56px;
+    width: 56px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 30px;
+  }
+
+  .menuLink {
+    height: 80px;
+    width: 80px;
+    font-size: 32px;
+  }
+}

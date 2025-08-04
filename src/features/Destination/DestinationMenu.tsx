@@ -1,11 +1,11 @@
-import { useTabContext } from "../../hooks/useTabContext";
+import { useDestinationContext } from "../../hooks/useDestinationContext";
 import styles from "./DestinationMenu.module.css";
 
 function DestinationMenu() {
-  const { activeTab, setActiveTab, destinations } = useTabContext();
+  const { activeDestination, setActiveDestination, destinations } = useDestinationContext();
 
   const handleClick = (id: number) => {
-    setActiveTab(id);
+    setActiveDestination(id);
   };
 
   return (
@@ -15,7 +15,7 @@ function DestinationMenu() {
           <li
             key={destination.id}
             className={`${styles.menuLink} ${
-              activeTab === destination.id ? styles.active : ""
+              activeDestination === destination.id ? styles.active : ""
             }`}
             onClick={() => handleClick(destination.id)}
           >

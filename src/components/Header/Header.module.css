@@ -1,3 +1,53 @@
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: -354px;
+  width: 222px;
+  height: 100vh;
+  background-color: rgba(11, 13, 23, 0.7);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 0 32px;
+  gap: 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 1001;
+}
+
+.mobileMenu.open {
+  right: 0;
+}
+
+.mobileMenu button {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.burgerMenuLink,
+.burgerMenuNumber {
+  color: #ffffff;
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+}
+
+.burgerMenuLink {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.burgerMenuNumber {
+  font-weight: 700;
+  letter-spacing: 2.700000047683716px;
+  padding-right: 12px;
+}
+
+.closeIcon {
+}
+
 .header {
   display: flex;
   justify-content: space-between;

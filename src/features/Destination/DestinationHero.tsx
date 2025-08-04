@@ -1,11 +1,11 @@
 import styles from "./DestinationHero.module.css";
-import { useTabContext } from "../../hooks/useTabContext";
+import { useDestinationContext } from "../../hooks/useDestinationContext";
 
 function DestinationHero() {
-  const { activeTab, destinations } = useTabContext();
+  const { activeDestination, destinations } = useDestinationContext();
 
   const currentDestination = destinations.find(
-    (destination) => destination.id === activeTab
+    (destination) => destination.id === activeDestination
   );
 
   if (!currentDestination) return null;

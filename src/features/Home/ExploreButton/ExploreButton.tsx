@@ -1,10 +1,11 @@
+import { Link } from "react-router";
 import styles from "./ExploreButton.module.css";
 
 function ExploreButton() {
   return (
-    <div className={styles.button}>
+    <Link to="/destination" className={styles.button}>
       <span>explore</span>
-    </div>
+    </Link>
   );
 }
 

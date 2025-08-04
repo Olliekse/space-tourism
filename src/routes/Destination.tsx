@@ -3,13 +3,13 @@ import DestinationHero from "../features/Destination/DestinationHero";
 import DestinationInfo from "../features/Destination/DestinationInfo";
 import DestinationMenu from "../features/Destination/DestinationMenu";
 import styles from "./Destination.module.css";
-import { useTabContext } from "../hooks/useTabContext";
+import { useDestinationContext } from "../hooks/useDestinationContext";
 
 function Destination() {
-  const { activeTab, destinations } = useTabContext();
+  const { activeDestination, destinations } = useDestinationContext();
 
   const currentDestination = destinations.find(
-    (destination) => destination.id === activeTab
+    (destination) => destination.id === activeDestination
   );
 
   if (!currentDestination) return null;

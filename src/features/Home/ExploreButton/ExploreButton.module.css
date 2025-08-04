@@ -7,6 +7,12 @@
   background-color: #ffffff;
   border-radius: 999px;
   text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  color: #0b0d17;
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 32px;
 }
 
 @media (min-width: 768px) {

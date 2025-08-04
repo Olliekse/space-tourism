@@ -1,8 +1,8 @@
 import { createContext } from "react";
-import moon from "../assets/destination/image-moon.png"
-import mars from "../assets/destination/image-mars.png"
-import europa from "../assets/destination/image-europa.png"
-import titan from "../assets/destination/image-titan.png"
+import moon from "../assets/destination/image-moon.png";
+import mars from "../assets/destination/image-mars.png";
+import europa from "../assets/destination/image-europa.png";
+import titan from "../assets/destination/image-titan.png";
 
 export type DestinationType = {
   id: number;
@@ -14,15 +14,15 @@ export type DestinationType = {
   image: string;
 };
 
-export type TabContextType = {
-  activeTab: number;
-  setActiveTab: React.Dispatch<React.SetStateAction<number>>;
+export type DestinationContextType = {
+  activeDestination: number;
+  setActiveDestination: React.Dispatch<React.SetStateAction<number>>;
   destinations: DestinationType[];
 };
 
-const defaultContext: TabContextType = {
-  activeTab: 1,
-  setActiveTab: () => {},
+const defaultContext: DestinationContextType = {
+  activeDestination: 1,
+  setActiveDestination: () => {},
   destinations: [],
 };
 
@@ -69,4 +69,5 @@ export const destinationData: DestinationType[] = [
   },
 ];
 
-export const TabContext = createContext<TabContextType>(defaultContext);
+export const DestinationContext =
+  createContext<DestinationContextType>(defaultContext);

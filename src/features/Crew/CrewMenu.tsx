@@ -27,9 +27,3 @@ function CrewMenu() {
 }
 
 export default CrewMenu;
-
-// key={destination.id}
-//             className={`${styles.menuLink} ${
-//               activeTab === destination.id ? styles.active : ""
-//             }`}
-//             onClick={() => handleClick(destination.id)}

@@ -1,16 +1,19 @@
 import { RouterProvider } from "react-router";
 import { router } from "./router";
-import { TabProvider } from "./context/HomeMenuProvider";
+import { DestinationProvider } from "./context/DestinationProvider";
 import { CrewProvider } from "./context/CrewProvider";
+import { TechnologyProvider } from "./context/TechnologyProvider";
 
 function App() {
   return (
     <div className="page-wrapper">
-      <TabProvider>
+      <DestinationProvider>
         <CrewProvider>
-          <RouterProvider router={router} />
+          <TechnologyProvider>
+            <RouterProvider router={router} />
+          </TechnologyProvider>
         </CrewProvider>
-      </TabProvider>
+      </DestinationProvider>
     </div>
   );
 }

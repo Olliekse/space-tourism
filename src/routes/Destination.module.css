@@ -2,6 +2,7 @@
   background-image: url("../assets/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -24,7 +25,7 @@
 .subtitle {
   font-weight: 400;
   padding-block: 48px 50px;
-  align-self: center;
+  text-align: center;
   margin: 0;
   text-transform: uppercase;
 }
@@ -56,8 +57,8 @@
   }
 
   .subtitle {
-    align-self: start;
-    padding-top: 68px;
+    text-align: left;
+    padding-block: 64px 66px;
   }
 
   .subtitle,
@@ -91,6 +92,7 @@
     flex-direction: column;
     align-self: center;
     gap: 151px;
+    width: 1100px;
   }
 
   .innerContainer {
@@ -109,6 +111,11 @@
     width: 480px;
     height: 480px;
     align-self: baseline;
+  }
+
+  .subtitle,
+  .number {
+    font-size: 28px;
   }
 
   .subtitle {

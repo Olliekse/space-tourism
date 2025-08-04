@@ -1,0 +1,57 @@
+.title,
+.text {
+  font-weight: 400;
+  text-align: center;
+}
+
+.title {
+  font-family: "Bellefair";
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.text {
+  font-family: "Barlow";
+  font-size: 15px;
+  line-height: 180%;
+  color: #d0d6f9;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .text {
+    margin: 16px 0 0;
+    font-size: 16px;
+  }
+
+  .infoContainer {
+    width: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title,
+  .text {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .infoContainer {
+    width: 491px;
+  }
+}
