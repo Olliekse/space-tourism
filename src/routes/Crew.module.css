@@ -1,0 +1,160 @@
+.mainContainer {
+  background-image: url("../assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mainContent {
+  padding-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle,
+.number {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  font-family: "Barlow Condensed";
+}
+
+.subtitle {
+  font-weight: 400;
+  padding-bottom: 24px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.number {
+  font-weight: 700;
+  opacity: 0.25;
+  padding-right: 24px;
+}
+
+.innerContainer {
+  padding-top: 40px;
+}
+
+.imageContainer {
+  margin-top: 32px;
+  padding: 0;
+  position: relative;
+  display: flex;
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+}
+
+.image {
+  max-width: auto;
+  max-height: 340px;
+  align-self: center;
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .mainContainer {
+    padding-inline: 40px;
+    padding-bottom: 0;
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+  }
+
+  .mainContent {
+    padding-block: 40px;
+  }
+
+  .subtitle {
+    text-align: left;
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .subtitle,
+  .number {
+    font-size: 20px;
+  }
+
+  .innerContainer {
+    padding-top: 64px;
+  }
+
+  .imageContainer {
+    margin-bottom: -80px;
+    padding: 0;
+    width: 688px;
+    height: 463px;
+  }
+
+  .textContainer {
+    justify-self: center;
+  }
+
+  .image {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mainContainer {
+    padding: 64px;
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainContent {
+    padding-top: 72px;
+  }
+
+  .outerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .innerContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .subtitle {
+    padding: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .subtitle,
+  .number {
+    font-size: 28px;
+  }
+
+  .textContainer {
+    padding-top: 197px;
+    width: 539px;
+  }
+
+  .imageContainer {
+    padding: 29px 0 0;
+    padding: 0;
+    width: 539px;
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

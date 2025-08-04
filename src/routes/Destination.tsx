@@ -1,7 +1,7 @@
 import Header from "../components/Header/Header";
 import DestinationHero from "../features/Destination/DestinationHero";
 import DestinationInfo from "../features/Destination/DestinationInfo";
-import DestinationNav from "../features/Destination/DestinationNav";
+import DestinationMenu from "../features/Destination/DestinationMenu";
 import styles from "./Destination.module.css";
 import { useTabContext } from "../hooks/useTabContext";
 
@@ -24,7 +24,7 @@ function Destination() {
         <div className={styles.innerContainer}>
           <img className={styles.image} src={currentDestination.image} />
           <div className={styles.textContainer}>
-            <DestinationNav />
+            <DestinationMenu />
             <DestinationHero />
             <div className={styles.separator}></div>
             <DestinationInfo />

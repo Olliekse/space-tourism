@@ -1,0 +1,33 @@
+.menuCirclesContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.menuCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #979797;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  .menuCirclesContainer {
+    display: flex;
+    gap: 40px;
+    justify-content: start;
+    padding-bottom: 48px
+  }
+
+  .menuCircle {
+    width: 15px;
+    height: 15px;
+  }
+}

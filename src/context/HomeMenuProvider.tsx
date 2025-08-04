@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { ReactNode } from "react";
-import { TabContext, destinationData } from "./TabContext";
+import { TabContext, destinationData } from "./HomeMenuContext";
 
 export function TabProvider({ children }: { children: ReactNode }) {
   const [activeTab, setActiveTab] = useState(1);

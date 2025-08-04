@@ -1,7 +1,7 @@
 import { useTabContext } from "../../hooks/useTabContext";
-import styles from "./DestinationNav.module.css";
+import styles from "./DestinationMenu.module.css";
 
-function DestinationNav() {
+function DestinationMenu() {
   const { activeTab, setActiveTab, destinations } = useTabContext();
 
   const handleClick = (id: number) => {
@@ -9,7 +9,7 @@ function DestinationNav() {
   };
 
   return (
-    <nav className={styles.destinationNav}>
+    <nav className={styles.destinationMenu}>
       <ul className={styles.list}>
         {destinations.map((destination) => (
           <li
@@ -27,4 +27,4 @@ function DestinationNav() {
   );
 }
 
-export default DestinationNav;
+export default DestinationMenu;

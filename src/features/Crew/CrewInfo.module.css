@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+  height: 244px;
+}
+
+.name,
+.bio,
+.rank {
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.name,
+.rank {
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  color: #ffffff;
+}
+
+.name {
+  padding-bottom: 24px;
+  font-size: 24px;
+}
+
+.bio {
+  font-family: "Barlow";
+  font-size: 15px;
+  line-height: 180%;
+  color: #d0d6f9;
+}
+
+.rank {
+  opacity: 0.5;
+  padding-bottom: 8px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 512px;
+    height: 305px;
+  }
+
+  .rank {
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+  .bio {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding-bottom: 197px;
+  }
+
+  .rank,
+  .name,
+  .bio {
+    text-align: left;
+  }
+
+  .rank {
+    font-size: 32px;
+  }
+
+  .name {
+    font-size: 56px;
+  }
+
+  .bio {
+    font-size: 18px;
+  }
+}

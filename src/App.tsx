@@ -1,12 +1,17 @@
 import { RouterProvider } from "react-router";
 import { router } from "./router";
-import { TabProvider } from "./context/TabProvider";
+import { TabProvider } from "./context/HomeMenuProvider";
+import { CrewProvider } from "./context/CrewProvider";
 
 function App() {
   return (
-    <TabProvider>
-      <RouterProvider router={router} />
-    </TabProvider>
+    <div className="page-wrapper">
+      <TabProvider>
+        <CrewProvider>
+          <RouterProvider router={router} />
+        </CrewProvider>
+      </TabProvider>
+    </div>
   );
 }
 
