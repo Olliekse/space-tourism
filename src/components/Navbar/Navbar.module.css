@@ -2,6 +2,16 @@
   display: none;
 }
 
+.link:hover {
+  border-bottom: 3px solid;
+  padding-bottom: 15px;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.link {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .headerNav {
     display: flex;

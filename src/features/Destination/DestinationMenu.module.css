@@ -17,10 +17,17 @@
   font-size: 16px;
   letter-spacing: 2px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .menuLink.active {
   border-bottom: 3px solid;
   border-color: #ffffff;
   padding-bottom: 15px;
+}
+
+.menuLink:hover {
+  border-bottom: 3px solid;
+  padding-bottom: 15px;
+  border-color: rgba(255, 255, 255, 0.3);
 }

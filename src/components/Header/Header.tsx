@@ -5,7 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useState } from "react";
 import iconClose from "../../assets/shared/icon-close.svg";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 function Header() {
   const isDesktop = useMediaQuery({ minWidth: 1440 });
@@ -40,34 +40,50 @@ function Header() {
         <button onClick={() => setMenuOpen(false)}>
           <img className={styles.closeIcon} src={iconClose} alt="Close icon" />
         </button>
-        <Link
-          className={styles.burgerMenuLink}
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? `${styles.activeLink} ${styles.burgerMenuLink}`
+              : `${styles.inactiveLink} ${styles.burgerMenuLink}}`
+          }
           to="/"
           onClick={() => setMenuOpen(false)}
         >
           <span className={styles.burgerMenuNumber}>00</span>Home
-        </Link>
-        <Link
-          className={styles.burgerMenuLink}
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? `${styles.activeLink} ${styles.burgerMenuLink}`
+              : `${styles.inactiveLink} ${styles.burgerMenuLink}}`
+          }
           to="/destination"
           onClick={() => setMenuOpen(false)}
         >
           <span className={styles.burgerMenuNumber}>01</span>Destination
-        </Link>
-        <Link
-          className={styles.burgerMenuLink}
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? `${styles.activeLink} ${styles.burgerMenuLink}`
+              : `${styles.inactiveLink} ${styles.burgerMenuLink}}`
+          }
           to="/crew"
           onClick={() => setMenuOpen(false)}
         >
           <span className={styles.burgerMenuNumber}>02</span>Crew
-        </Link>
-        <Link
-          className={styles.burgerMenuLink}
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? `${styles.activeLink} ${styles.burgerMenuLink}`
+              : `${styles.inactiveLink} ${styles.burgerMenuLink}}`
+          }
           to="/technology"
           onClick={() => setMenuOpen(false)}
         >
           <span className={styles.burgerMenuNumber}>03</span>Technology
-        </Link>
+        </NavLink>
       </nav>
       <Navbar />
     </header>

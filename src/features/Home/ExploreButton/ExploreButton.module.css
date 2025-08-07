@@ -12,7 +12,13 @@
   color: #0b0d17;
   font-family: "Bellefair";
   font-weight: 400;
-  font-size: 32px;
+  font-size: 18px;
+}
+
+.button:hover {
+  outline-width: 88px;
+  outline-style: solid;
+  outline-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (min-width: 768px) {
